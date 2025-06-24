@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript</title>
+</head>
+<body>
+    
+    <h1 id="heading"></h1>
+    <button id="btn">click me</button>
+    <script>
+        //javascript goes in here
+        document.getElementById("heading").innerText = "welcome"
+        console.log("welcome to js")
+
+        //btn code
+        let toggle = true
+        document.getElementById("btn").onclick=(event)=> {
+            console.log("btn clicked...")
+            if(toggle){
+                document.getElementsByTagName('body')[0].style.backgroundColor= 'lightblue'
+             } else{
+                document.getElementsByTagName('body')[0].style.backgroundColor= 'white'
+             }
+             toggle =!toggle;
+        }
+    </script>
+</body>
+</html>
